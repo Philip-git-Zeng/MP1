@@ -1,0 +1,17 @@
+[
+build
+]
+  # construct command
+  command = "pnpm build && pnpm export"
+  # published static files directory
+  publish = "out"
+
+[[
+redirects
+]]
+  # capture all routes
+  from = "/*"
+  # point to index.html, support frontend routing
+  to = "/index.html"
+  # status code 200
+  status = 200
