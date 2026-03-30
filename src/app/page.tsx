@@ -52,6 +52,7 @@ export default async function Home() {
         </div>
 
         {/* Research & Projects */}
+        {/*
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
             <Briefcase size={28}/>
@@ -69,7 +70,8 @@ export default async function Home() {
             ))}
           </ul>
         </div>
-
+        */}
+        
         {/* Hobbies & Volunteer */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">

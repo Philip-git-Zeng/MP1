@@ -14,7 +14,7 @@ export type ActivityItemType = {
   link?: string
 }
 
-// Awards
+// Research and Projects
 export const awardsHeadLine = "Awards & Honors"
 export const awardsIntro = "Recognition for academic and professional achievements."
 
@@ -33,6 +33,7 @@ export const awards: Array<ActivityItemType> = [
   },
 ]
 
+/*
 // Research & Projects
 export const projectHeadLine = "Research & Projects"
 export const projectIntro = "Academic research and technical projects I've worked on."
@@ -63,6 +64,7 @@ export const projects: Array<ProjectItemType> = [
     tags: ['Education', 'AI']
   },
 ]
+*/
 
 // Hobbies & Volunteer
 export const activitiesHeadLine = "Hobbies & Volunteer"
