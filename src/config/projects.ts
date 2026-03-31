@@ -91,8 +91,7 @@ export const researchProjects: Array<ResearchProjectType> = [
       publisher: 'Nature Publishing Group'
     },
     links: {
-      pdf: 'https://example.com/healthcare.pdf',
-      code: 'https://github.com/example/healthcare-ml'
+      pdf: 'https://example.com/healthcare.pdf'
     },
     tags: ['Healthcare', 'Deep Learning', 'Medical AI']
   }
