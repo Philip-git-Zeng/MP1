@@ -13,11 +13,11 @@ export type EducationItemType = {
   
   export const educationList: Array<EducationItemType> = [
     {
-      school: 'Institute of Biophysics, Chinese Academy of Sciences',
+      school: 'Institute of Biophysics, Chinese Academy of Science',
       major: 'Biology and Pharmaceutics',
       logo: 'college',
-      start: '2023',
-      end: '2020'
+      start: '2020',
+      end: '2023'
     },
     {
       school: 'Jiangxi Normal University',

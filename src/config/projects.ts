@@ -44,52 +44,50 @@ export interface ResearchProjectType {
 export const researchProjects: Array<ResearchProjectType> = [
   {
     title: 'Blood-testis barrier-crossing extracellular vesicles for asthenozoospermia therapy via synergistic ATP replenishment and ferroptosis suppression.',
-    description: 'This study explores the effectiveness of large language models in generating high-quality code. We propose a novel fine-tuning approach that improves accuracy by 15% compared to baseline models. The research includes comprehensive experiments on multiple programming languages and real-world coding tasks.',
+    description: 'This study constructed engineered extracellular vesicles capable of traversing the blood-testis barrier for synergistic treatment of asthenozoospermia via ATP supplementation and ferroptosis inhibition.',
     date: '2026',
     venue: 'Sir Run Run Shaw Hospital, Zhejiang University School of Medicine',
-    authors: ['Yu X', 'Zeng L', 'et al.'],
+    authors: ['Xinghua Yu', 'Lingan Zeng', 'Haiyan Chen', 'Xuemei Dong', 'Fan Wen', 'Mingming Wang', 'Runqi Pan', 'Yujun Zhang', 'Wei Zhu', 'Dingyuan Yan', 'Dong Wang', 'Fei Sun'],
     publication: {
       journal: 'Biomaterials',
       volume: '327',
-      pages: '123-135',
+      pages: '123777',
       doi: '10.1016/j.biomaterials.2025.123777',
       publisher: 'Elsevier'
     },
     links: {
       pdf: 'https://www.sciencedirect.com/science/article/pii/S0142961225006969?via%3Dihub'
     },
-    tags: ['LLM', 'Code Generation', 'AI']
+    tags: ['HPV', 'immunotherapy', 'biomaterials']
   },
   {
-    title: 'Interactive Data Visualization Framework',
-    description: 'A novel web-based framework for interactive data visualization that supports real-time data streaming and user interaction. The framework has been deployed in multiple educational institutions and received positive feedback for its ease of use and performance.',
-    date: '2023',
-    venue: 'CHI 2023 Conference on Human Factors in Computing Systems',
-    authors: ['Chen Xiao', 'Liu Yang', 'Zhao Min'],
+    title: 'An NIR-II Absorbing Injectable Hydrogel for Boosted Photo-Immunotherapy Toward Human Papillomavirus Associated Cancer',
+    description: 'This study designed and validated a NIR-II light-responsive hydrogel to enhance the photoimmunotherapeutic efficacy against HPV-associated tumors.',
+    date: '2025',
+    venue: 'Sir Run Run Shaw Hospital, Zhejiang University School of Medicine',
+    authors: ['Xinghua Yu', 'Lingan Zeng', 'Xinyue Yang', 'Zuliang Ren', 'Xuemei Dong', 'Ge Meng', 'Guogang Shan', 'Dingyuan Yan', 'Dong Wang', 'Fei Sun'],
     publication: {
-      journal: 'Proceedings of the CHI Conference',
-      volume: '2023',
-      pages: '1-12',
-      doi: '10.1145/3544548.3581234',
-      publisher: 'ACM'
+      journal: 'Aggregate',
+      volume: '6',
+      doi: '10.1002/agt2.743',
+      publisher: 'Wiley'
     },
     links: {
-      pdf: 'https://example.com/framework.pdf',
-      demo: 'https://framework-demo.example.com'
+      pdf: 'https://onlinelibrary.wiley.com/doi/epdf/10.1002/agt2.743'
     },
-    tags: ['Data Visualization', 'HCI', 'Web Framework']
+    tags: ['HPV', 'immunotherapy', 'biomaterials']
   },
   {
-    title: 'Machine Learning in Healthcare Diagnostics',
-    description: 'Developing deep learning models for early detection of cardiovascular diseases using ECG signals. The model achieves 94.2% accuracy on a dataset of 10,000 patients and has been validated in clinical settings.',
-    date: '2023',
-    venue: 'Nature Digital Medicine',
-    authors: ['Wang Wei', 'Zhang Jing', 'Li Hua', 'Chen Yu'],
+    title: 'Recognition of cyclic dinucleotides and folates by human SLC19A1',
+    description: 'Using flow cytometry, ELISA, and Western blotting, we screened and identified monoclonal antibodies against the SLC19A1 protein, which subsequently enabled its structural determination.',
+    date: '2022',
+    venue: 'Institute of Biophysics, Chinese Academy of Science',
+    authors: ['Qixiang Zhang', 'Xuyuan Zhang', 'Yalan Zhu', 'Panpan Sun', 'Liwei Zhang', 'Junxiao Ma', 'Yong Zhang', 'Lingan Zeng', 'Xiaohua Nie', 'Yina Gao', 'Zhaolong Li', 'Songqing Liu', 'Jizhong Lou', 'Ang Gao', 'Liguo Zhang', 'Pu Gao'],
     publication: {
-      journal: 'Nature Digital Medicine',
+      journal: 'Nature',
       volume: '6',
       pages: '45-58',
-      doi: '10.1038/s41746-023-00891-2',
+      doi: '10.1038/s41586-022-05452-z',
       publisher: 'Nature Publishing Group'
     },
     links: {

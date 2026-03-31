@@ -13,10 +13,23 @@ export default function ResearchCard({ project, titleAs = 'h3' }: ResearchCardPr
   
   const formatAuthors = (authors?: string[]) => {
     if (!authors || authors.length === 0) return null
-    if (authors.length === 1) return authors[0]
-    if (authors.length === 2) return `${authors[0]} and ${authors[1]}`
-    return `${authors[0]}, ${authors[1]}, et al.`
+    //my name
+    const myName = "Lingan Zeng"
+    // treat single author
+    const processAuthor = (author: string, index: number) => {
+    if (author === myName) {
+      return <strong key={author}>{author}</strong>
+    }
+    return <span key={index}>{author}</span>
   }
+   // Show all authors with comma separation
+  return authors.map((author, index) => (
+    <span key={index}>
+      {processAuthor(author, index)}
+      {index < authors.length - 1 && ', '}
+    </span>
+  ))
+}
 
   return (
     <div className="group relative flex flex-col h-full p-6 rounded-lg border border-muted bg-card hover:shadow-lg transition-all duration-300">
