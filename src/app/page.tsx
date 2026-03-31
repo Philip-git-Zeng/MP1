@@ -1,14 +1,12 @@
 import { Container } from '@/components/layout/Container'
-import Newsletter from '@/components/home/Newsletter'
 import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
 import SocialLinks from '@/components/home/SocialLinks'
 import { headline, introduction } from '@/config/infoConfig'
 import { BlogCard } from '@/components/home/BlogCard'
 import { getAllBlogs, type BlogType } from '@/lib/blogs'
-import { ProjectCard } from '@/components/project/ProjectCard'
 import { ActivityCard } from '@/components/home/ActivityCard'
-import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
+import { blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
 import { activities, activitiesHeadLine, activitiesIntro, researchHeadLine, researchProjects } from '@/config/projects'
 import IconCloud from "@/components/ui/icon-cloud"
 import { BookOpen, Heart } from 'lucide-react'// replace Award icon
