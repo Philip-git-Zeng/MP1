@@ -15,56 +15,90 @@ export type ActivityItemType = {
 }
 
 // Research and Projects
-export const awardsHeadLine = "Awards & Honors"
-export const awardsIntro = "Recognition for academic and professional achievements."
+export const researchHeadLine = "Research & Projects"
+export const researchIntro = "Academic research and selected projects."
 
-export const awards: Array<ActivityItemType> = [
+// Define new project data type（extending ActivityItemType）
+export interface ResearchProjectType {
+  title: string           // Project name
+  description: string     // Project description/summary
+  date: string           // Date
+  venue?: string         // Location/publishing venue
+  authors?: string[]     // Authors
+  publication?: {        // Publication information
+    journal?: string
+    volume?: string
+    pages?: string
+    doi?: string
+    publisher?: string
+  }
+  links?: {              // Related links
+    pdf?: string
+    code?: string
+    demo?: string
+  }
+  tags?: string[]        // Tags
+}
+
+// Example data
+export const researchProjects: Array<ResearchProjectType> = [
   {
-    name: 'Outstanding Teacher Award',
-    description: '',
-    date: '2024',
-    location: 'SCLS, Shanghai',
+    title: 'Blood-testis barrier-crossing extracellular vesicles for asthenozoospermia therapy via synergistic ATP replenishment and ferroptosis suppression.',
+    description: 'This study explores the effectiveness of large language models in generating high-quality code. We propose a novel fine-tuning approach that improves accuracy by 15% compared to baseline models. The research includes comprehensive experiments on multiple programming languages and real-world coding tasks.',
+    date: '2026',
+    venue: 'Sir Run Run Shaw Hospital, Zhejiang University School of Medicine',
+    authors: ['Yu X', 'Zeng L', 'et al.'],
+    publication: {
+      journal: 'Biomaterials',
+      volume: '327',
+      pages: '123-135',
+      doi: '10.1016/j.biomaterials.2025.123777',
+      publisher: 'Elsevier'
+    },
+    links: {
+      pdf: 'https://www.sciencedirect.com/science/article/pii/S0142961225006969?via%3Dihub'
+    },
+    tags: ['LLM', 'Code Generation', 'AI']
   },
   {
-    name: 'Zhui Ying Award',
-    description: '',
+    title: 'Interactive Data Visualization Framework',
+    description: 'A novel web-based framework for interactive data visualization that supports real-time data streaming and user interaction. The framework has been deployed in multiple educational institutions and received positive feedback for its ease of use and performance.',
     date: '2023',
-    location: 'Qingpu, Shanghai',
+    venue: 'CHI 2023 Conference on Human Factors in Computing Systems',
+    authors: ['Chen Xiao', 'Liu Yang', 'Zhao Min'],
+    publication: {
+      journal: 'Proceedings of the CHI Conference',
+      volume: '2023',
+      pages: '1-12',
+      doi: '10.1145/3544548.3581234',
+      publisher: 'ACM'
+    },
+    links: {
+      pdf: 'https://example.com/framework.pdf',
+      demo: 'https://framework-demo.example.com'
+    },
+    tags: ['Data Visualization', 'HCI', 'Web Framework']
   },
+  {
+    title: 'Machine Learning in Healthcare Diagnostics',
+    description: 'Developing deep learning models for early detection of cardiovascular diseases using ECG signals. The model achieves 94.2% accuracy on a dataset of 10,000 patients and has been validated in clinical settings.',
+    date: '2023',
+    venue: 'Nature Digital Medicine',
+    authors: ['Wang Wei', 'Zhang Jing', 'Li Hua', 'Chen Yu'],
+    publication: {
+      journal: 'Nature Digital Medicine',
+      volume: '6',
+      pages: '45-58',
+      doi: '10.1038/s41746-023-00891-2',
+      publisher: 'Nature Publishing Group'
+    },
+    links: {
+      pdf: 'https://example.com/healthcare.pdf',
+      code: 'https://github.com/example/healthcare-ml'
+    },
+    tags: ['Healthcare', 'Deep Learning', 'Medical AI']
+  }
 ]
-
-/*
-// Research & Projects
-export const projectHeadLine = "Research & Projects"
-export const projectIntro = "Academic research and technical projects I've worked on."
-
-export const projects: Array<ProjectItemType> = [
-  {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
-  },
-  {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
-  },
-  {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
-  },
-  {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
-  },
-]
-*/
 
 // Hobbies & Volunteer
 export const activitiesHeadLine = "Hobbies & Volunteer"

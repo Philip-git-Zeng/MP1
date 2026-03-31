@@ -9,9 +9,10 @@ import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { ActivityCard } from '@/components/home/ActivityCard'
 import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
-import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
+import { activities, activitiesHeadLine, activitiesIntro, researchHeadLine, researchProjects } from '@/config/projects'
 import IconCloud from "@/components/ui/icon-cloud"
-import { Award, Briefcase, Heart } from 'lucide-react'
+import { BookOpen, Heart } from 'lucide-react'// replace Award icon
+import ResearchCard from '@/components/ResearchCard'
 
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)
@@ -35,22 +36,27 @@ export default async function Home() {
           </div>
         </div>
 
-        {/* Awards */}
+        {/* Research & Projects */}
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
           <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <Award size={28}/>
-            {awardsHeadLine}
+            <BookOpen size={28}/>
+            {researchHeadLine}
           </h2>
+          {/* Optional: Adding simple introduction */}
+          <p className="text-muted-foreground mb-2">
+            Academic research and selected projects.
+          </p>
           <ul
             role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
+            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {awards.map((award) => (
-              <ActivityCard key={award.name} activity={award} titleAs='h3'/>
+            {researchProjects.map((project, index) => (
+              <li key={`${project.title}-${index}`}>
+                <ResearchCard project={project} titleAs='h3'/>
+               </li> 
             ))}
           </ul>
         </div>
-
         {/* Research & Projects */}
         {/*
         <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
