@@ -126,3 +126,10 @@ export const activities: Array<ActivityItemType> = [
     location: 'Shanghai',
   },
 ]
+
+// Projects page exports (for src/app/projects/page.tsx)
+export const projectHeadLine = "Projects"
+export const projectIntro = "Here are some of my projects"
+
+// Export projects array (empty for now, add your project data as needed)
+export const projects: Array<ProjectItemType> = []
