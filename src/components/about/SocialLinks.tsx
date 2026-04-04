@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { email, socialLinks } from '@/config/infoConfig'
 import { CustomIcon } from '@/components/shared/CustomIcon'
 
-
 export default function SocialLinks() {
     return (
         <div>
