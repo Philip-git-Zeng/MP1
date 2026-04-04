@@ -58,7 +58,7 @@ export const researchProjects: Array<ResearchProjectType> = [
     links: {
       pdf: 'https://www.sciencedirect.com/science/article/pii/S0142961225006969?via%3Dihub'
     },
-    tags: ['HPV', 'immunotherapy', 'biomaterials']
+    tags: ['EVs', 'asthenozoospermia', 'ferroptosis']
   },
   {
     title: 'An NIR-II Absorbing Injectable Hydrogel for Boosted Photo-Immunotherapy Toward Human Papillomavirus Associated Cancer',
@@ -85,15 +85,15 @@ export const researchProjects: Array<ResearchProjectType> = [
     authors: ['Qixiang Zhang', 'Xuyuan Zhang', 'Yalan Zhu', 'Panpan Sun', 'Liwei Zhang', 'Junxiao Ma', 'Yong Zhang', 'Lingan Zeng', 'Xiaohua Nie', 'Yina Gao', 'Zhaolong Li', 'Songqing Liu', 'Jizhong Lou', 'Ang Gao', 'Liguo Zhang', 'Pu Gao'],
     publication: {
       journal: 'Nature',
-      volume: '6',
-      pages: '45-58',
+      volume: '612',
+      pages: '170-176',
       doi: '10.1038/s41586-022-05452-z',
       publisher: 'Nature Publishing Group'
     },
     links: {
-      pdf: 'https://example.com/healthcare.pdf'
+      pdf: 'https://www.nature.com/articles/s41586-022-05452-z'
     },
-    tags: ['Healthcare', 'Deep Learning', 'Medical AI']
+    tags: ['SLC19A1', 'cryo-electron microscopy', 'transporter mechanism']
   }
 ]
 
